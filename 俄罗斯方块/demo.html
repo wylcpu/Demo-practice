@@ -7,17 +7,47 @@
 		body{
 			margin: 0;
 			padding: 0;
+			background:url(249.jpg);
 		}
 		#grade{
 			position: absolute;
 			top: 0;
-			left:750px;
+			left:850px;
+			color:red;
+
+		}
+		#canvas{
+			position: absolute;
+			top:40px;
+			left:530px;
+		}
+		#canvas2{
+			position: absolute;
+			top:100px;
+			left:850px;
+		}
+		#state{
+			position:absolute;
+			top: 400px;
+			right:220px;
+		}
+		#state span{
+			color:red;
 		}
 	</style>
 </head>
 <body>
+	<p id="nav">本游戏由eviloo7开发</p>
 	<canvas id="canvas"></canvas>
-	<h2 id= "grade">0</h2>
+	<h1 id= "grade">0</h1>
+	<canvas id="canvas2"></canvas>
+	<div id="state">
+		<h1>通过方向键进行控制</h1>
+		<h2>方向键<span>上</span>是变形</h1>
+		<h2>方向键<span>下</span>是快速</h2>
+		<h2>暂停是<span>空格键</span></h2>
+		<h3>也可以通过<span>A,W,D,S</span>进行控制</h3>
+	</div
 	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
