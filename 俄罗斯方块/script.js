@@ -1,6 +1,6 @@
 //游戏的耦合性太高了，思路不是很清楚，没有从整体上进行把握
 //现在假定每个小方格是30px，其中包括3px的边框
-//
+//过几天再完善
 var canvas = document.getElementById("canvas");
 var cnavas2 = document.getElementById("canvas2");
 var context2 = canvas2.getContext("2d");
@@ -25,8 +25,7 @@ var newrand = 0;//记录下一个要实现的方块
 var smallarr = [[0,1,0,0,0,0,0],[0,0,2,0,0,0,0]];
 var stop = 1;
 //创建一个21*10的方格，默认状态是0，即什么都没有
-//
-//
+
 //注意注意注意！！！！！！！！
 // var arr = [];
 // for(var j=0; j<10; j++) {
@@ -40,7 +39,6 @@ var stop = 1;
 // }
 // arr = null;
 // store[1][2] = 1;
-// 
 
 for(var i=0; i<21; i++) {
 	var ar = [];
