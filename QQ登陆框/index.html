@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QQ登陆框</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="drag.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="logon" class="logon">
+	<!--logon这个事标题-->
+	<div class="top" id="top"></div>
+    <div class="nihao">
+    <div class="close" id="close"></div>
+    </div>
+    <!--content-->
+    <div class="inputs">
+    <div class="input1"><span>账 号：</span><input name="zhanghao" value="QQ账号或Emile账号" type="text" tabindex = '1' style="ime-mode:disabled" onFocus= "if(value == 'QQ账号或Emile账号') value = ' ';" onBlur="if(value ==' ') value ='QQ账号或Emile账号';"/></div>
+    <div class="input1"> <span>密 码：</span><input type="password" tabindex="2"/></div>
+    </div>
+    <!--登陆在线部分-->
+    <div class="bottomDiv">
+    <div class="btn"></div>
+    <div class="selected" id="selected" title="选择在线状态">
+    	<div class="online" id="selected-1"></div>
+        <div class="selected-2"></div>
+        <div class="selected-3">在线</div>
+        <ul class="hi" id="hi">
+        	<li>
+            	<div class="online hi-1"></div>
+                <div class="hi-yuema">我在线上</div>
+            </li>
+            <li>
+            	<div class="callme hi-1"></div>
+                <div class="hi-yuema">来Q我</div>
+            </li>
+            <li>
+            	<div class="away hi-1"></div>
+                <div class="hi-yuema">离开</div>
+            </li>
+            <li>
+            	<div class="busy hi-1"></div>
+                <div class="hi-yuema">忙碌中</div>
+            </li>
+            <li>
+            	<div class="selient hi-1"></div>
+                <div class="hi-yuema">沉默</div>
+            </li>
+            <li>
+            	<div class="hidden hi-1"></div>
+                <div class="hi-yuema">隐身</div>
+            </li>
+        </ul>
+    </div>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圣诞雪花</title>
+	<style>
+	body{
+		background:url(D:/js/圣诞雪花/Disneyland.jpg) no-repeat center 0 #000;
+		background-size: 100%;
+	}
+	.snow-size{
+		width:100%;
+		height:600px;
+		position: relative;
+	}
+	.newsnow{
+		position: absolute;
+		top: 10px;
+		color: #fff;
+	}
+	</style>
+	<script>
+	window.onload = function() {
+		var timer = null;
+		timer = setInterval(function(){
+			//添加雪花
+			var newdiv = document.createElement("div");
+		    newdiv.className = "newsnow";
+		    newdiv.innerHTML = "❅";
+			var snow = document.getElementsByTagName("div")[0];
+				wid = document.documentElement.clientWidth;
+			//产生一系列随机数
+			var e=Math.random()*wid-100;
+			var o=(Math.random()*7+3)/10;
+			var fon=10+Math.random()*30;
+			var l = e - 100 + 200 * Math.random();
+			var k=2000 + 5000 * Math.random();
+			//生成随机雪花
+			newdiv.style.left = e + "px";
+			newdiv.style.fontSize = fon + "px";
+			newdiv.style.opacity = o;
+			//添加到snow,成为他的子元素
+			snow.appendChild(newdiv);
+
+			 var timer3 =null; 
+			 timer3 = setInterval(function(){
+
+			 	var rand = Math.random()*200;
+				if(newdiv.offsetTop >= 500 + rand){
+					
+					// newdiv.style.top = newdiv.offsetTop + rand + "px";
+					// snow.removeChild(snow.firstChild);
+					// newdiv.style.top = newdiv.offsetTop + 5 +"px"; 
+					clearInterval(timer3);
+					// snow.removeChild(snow.firstChild);	
+					// newdiv.style.top = newdiv.offsetTop + 5 +"px"; 
+				}else{
+					newdiv.style.top = newdiv.offsetTop + 5 +"px"; 
+				}
+			},30)
+		},50) 
+	}
+	</script>
+</head>
+<body>
+	<div class="snow-size"></div>
+</body>
+</html>

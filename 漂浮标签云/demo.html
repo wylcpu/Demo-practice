@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>漂浮标签云</title>
+	<script type='text/javascript'>
+		window.onload = function () {
+			var oBox = document.getElementById("box"),
+				aLi = document.getElementsByTagName("a");
+
+			//该函数是设置每一个标签随机开始的初始位置
+			function pos (obj) {
+				if(obj.pause == 0){
+					var posWidth = Math.ceil(Math.random() * oBox.offsetWidth);//随机获取0-500的随机位置
+						if(posWidth-obj.offsetWidth >=0) {
+							obj.style.left = posWidth - obj.offsetWidth + "px";
+							obj.style.top = oBox.offsetWidth + 'px';//这里为了再次的利用
+						} else {
+							obj.style.left = posWidth + "px";
+							obj.style.top = oBox.offsetWidth + "px";
+						}
+					iTime = Math.ceil(Math.random() * 5000);//设置标签不同的时间开始运行,目的是为了打乱顺序
+					setTimeout(function () {
+						obj.pause = 1;
+					},iTime);
+				}	
+			}
+
+			//该函数的作用是设置每个标签的移动
+			function move (obj) {
+				var speed = Math.ceil(1+3*Math.random());
+				 obj.timer =setInterval(function() {
+					if(obj.offsetTop >= -25 && obj.pause == 1) {
+						obj.style.top = obj.offsetTop - speed + "px";
+					} else {
+						obj.pause = 0;
+						if(obj.offsetTop <= -20){//第一次结束后要用的
+							pos(obj);
+						}
+					}	
+				},30);
+			}
+
+			//设置开始时都是停止的,开始首轮运动
+			for(var i=0;i<aLi.length;i++) {
+			    aLi[i].pause = 0;
+				pos(aLi[i]);
+				move(aLi[i]);
+
+				aLi[i].onmouseover = function () {
+					this.pause = 0;
+				}
+				aLi[i].onmouseout = function () {
+					this.pause = 1;
+				}
+			}
+				
+		}
+	</script>
+	<style type='text/css'>
+		body,div{margin:0;padding:0}
+		a{text-decoration: none;}
+		body{background:url(./bg.png) no-repeat center 0;}
+		#box{width:500px; height:250px; margin: 145px auto; position: relative;overflow: hidden;}
+		#box a{border: 1px solid #000; height: 25px; line-height: 25px;padding: 0 5px;
+				color: #000; background: #fff; opacity:0.4; font-family: arial; position: absolute; top:250px;}
+		#box a:hover{ opacity: 1;}
+	</style>
+</head>
+<body>
+	<div id='box'>
+		<a href='#'>唐嫣</a>
+		<a href='#'>章子怡</a>
+		<a href='#'>范冰冰</a>
+		<a href='#'>谢娜</a>
+		<a href='#'>佟丽娅</a>
+		<a href='#'>刘诗诗</a>
+		<a href='#'>杨幂</a>
+		<a href='#'>巩俐</a>
+		<a href='#'>杨紫</a>
+		<a href='#'>张梦泓</a>
+		<a href='#'>庄心妍</a>
+		<a href='#'>金泰熙</a>
+		<a href='#'>张娜拉</a>
+		<a href='#'>刘德华</a>
+		<a href='#'>谢霆锋</a>
+		<a href='#'>吴京</a>
+		<a href='#'>吴奇隆</a>
+		<a href='#'>李小龙</a>
+		<a href='#'>吴玉亮</a>
+		<a href='#'>吴玉堂</a>
+		<a href='#'>钟汉良</a>
+		<a href='#'>林心如</a>
+		<a href='#'>赵薇</a>
+		<a href='#'>林依晨</a>
+		<a href='#'>张含韵</a>
+		<a href='#'>XX</a>
+	</div>
+</body>
+</html>

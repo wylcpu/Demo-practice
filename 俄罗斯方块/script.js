@@ -268,6 +268,7 @@ function bacomeOne(arr) {
  }
  //这个函数是需要优化的，觉得不可能这么多
  //是对每个形状进行变形的
+ //这个我感觉应该能用转换矩阵，等有空再优化吧，这个方法太笨了
  function shape(num,arr) {
  	switch(num) {
  		case 0:

@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0;
+padding:0;}
+li{
+	list-style:none;
+}
+.logon{
+	height:247px;
+	width:380px;
+	left:400px;
+	top:150px;
+	position:absolute;
+	border:1px solid #ccc;
+	background:#f6f6f6;
+	border-radius:10px;
+	box-shadow:0 0 8px #000;
+	
+}
+/*logon头部分*/
+.top{
+	background:url(images/login_window_logo.png) no-repeat -210px;
+	width:200px;
+	height:44px;
+	cursor:move;
+	position:relative;
+	top:10px;
+	left:100px;
+}
+.logon .nihao .close{ height:28px;width:28px; background:url(images/boxy_btn.png) no-repeat; position:absolute; top:-55px;left:370px; z-index:10; cursor:pointer;}
+
+.logon .nihao{position:relative;}
+/*账号，密码*/
+.inputs{
+	position:relative;
+	top:40px;
+	left:80px;
+	font:bold 15px arial;
+}
+.inputs .input1{ margin-bottom:20px;}
+.inputs .input1 input{ 
+	width:170px;
+	border:1px solid #ccc;
+	color:#868686;
+	font-size:16px;
+	padding:2px 3px;
+	border-radius:10px;
+	outline:none;
+}
+/*登陆部分*/
+.bottomDiv{
+	position:relative;
+	left:80px;
+	top:40px;
+	}
+.bottomDiv .btn{
+	background:url(images/login_btn.png) no-repeat -111px 0;
+	height:36px;
+	width:111px;
+	border:0;
+	float:left;
+	cursor:pointer;
+
+}
+.selected{
+	height:16px;
+	width:80px;
+	float:left;
+	cursor:pointer;
+	margin:8px 0 0 30px;
+	
+}
+.selected .selected-2{
+	background:url(images/ptlogin.png) no-repeat 0 -22px transparent;
+	height:6px;
+	width:7px;
+	float:left;
+	margin-top:5px;
+	text-indent:-999em;
+}
+.selected #selected-1{
+	float: left;
+	height: 14px;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 14px;
+	margin: 1px 4px 0 0;
+}
+.selected .selected-3{
+	float: left;
+	margin-left: 5px;
+	font-size: 12px;
+	line-height:18px!important;
+}
+.selected .online{ background:url(images/ptlogin.png) no-repeat 0 0;}
+.selected .callme{ background:url(images/ptlogin.png) no-repeat -72px 0;}
+.selected .away{ background:url(images/ptlogin.png) no-repeat -18px 0;}
+.selected .busy{ background:url(images/ptlogin.png) no-repeat -36px 0;}
+.selected .selient{ background:url(images/ptlogin.png) no-repeat -108px 0;}
+.selected .hidden{ background:url(images/ptlogin.png) no-repeat -54px 0;}
+.hi{
+	display:none;
+	position:absolute;
+	height:133px;
+	width:100px;
+	font-size:12px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc #6a6a6a #666 #cdcdcd;
+	top:22px;
+	right:140px;
+	line-height:1.5em;
+	background:white;
+	
+}
+.hi li{ float:left;
+		width:100px;
+		height:16px;
+		line-height:16px;
+		zoom:1;
+		cursor:pointer;
+		padding:3px 0;}
+
+.hi .hi-1{
+		float:left;
+		margin:2px 2px 0 5px;
+		width:14px;
+		height:14px;
+	}
+/*.hi .hi-yuema{ margin:0 0 0 22px;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+

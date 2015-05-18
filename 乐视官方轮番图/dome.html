@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>乐视效果</title>
+	<script type="text/javascript" src="../jQuery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+		body,div{
+			margin:0;
+			padding:0;
+		}
+		img{
+			border:none;
+			vertical-align:bottom;
+		}
+		#box{
+			position:relative;
+			height:400px;
+			overflow:hidden;
+		}
+		.BigBox{
+			position:relative;
+			height:100%;
+		}
+		.BigBox div{
+			position:absolute;
+			left:0;
+			top:0;
+			display:none;
+		}
+		.BigBox img{
+			height:400px;
+		}
+		.BigBox dl{
+			position:absolute;
+			left:40px;
+			top:40%;
+			width:460px;
+		}
+		.smallBox{
+			/*overflow:hidden;*/
+			margin:0 auto;
+			width:1260px;
+			height:60px;
+			position:absolute;
+			bottom:-18px;
+			left:45px;
+			/*position:relative;*/
+		}
+		.smallBox div{
+			cursor:pointer;
+			opacity:0.4;
+			position:relative;
+			float:left;
+			overflow:hidden;
+		}
+		.smallBox img{
+			width:125px;
+			height:60px;
+		}
+		.smallBox  span{
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		width:124px;
+		height:56px;
+		border:3px solid #333;
+		}	
+		.smallBox .span10{
+			width:120px;
+		}
+	</style>
+</head>
+<body>
+<div id="box">
+	<div class="BigBox">
+		<div><a><img src="images/0.jpg">
+		<dl>
+			<dt>sha</dt>
+			<dd>zhegeshi</dd>
+			<dd></dd>
+		</dl>
+		</a></div>
+		<div><a><img src="images/1.jpg">
+		<dl>
+			<dt>sdfsf</dt>
+			<dd>sfs</dd>
+			<dd>dfdf</dd>
+		</dl>
+		</a></div>
+		<div><a><img src="images/2.jpg">
+		<dl>
+			<dt>asdf</dt>
+			<dd>asdfa</dd>
+			<dd>asdfdasdf</dd>
+		</dl>
+		</a></div>
+		<div><a><img src="images/3.jpg">
+		<dl>
+			<dt>asdf</dt>
+			<dd>asdf</dd>
+			<dd>sdf</dd>
+		</dl>
+		</a></div>
+		<div><a><img src="images/4.jpg">
+		<dl>
+				<dt>asdf</dt>
+				<dd>asdf</dd>
+				<dd>adf</dd>
+			</dl>	
+		</a></div>
+		<div><a><img src="images/5.jpg">
+		<dl>
+			<dt>sa</dt>
+			<dd>adf</dd>
+			<dd>asdf</dd>
+		</dl>
+		</a></div>
+		<div><a><img src="images/6.jpg">
+		<dl>
+			<dt>asdf</dt>
+			<dd></dd>
+			<dd></dd>
+		</dl>
+		</a></div>
+		<div><a><img src="images/7.jpg">
+		<dl>
+			<dt></dt>
+			<dd></dd>
+			<dd></dd>
+		</dl>
+		</a></div>
+		<div><a><img src="images/8.jpg">
+		<dl>
+				<dt></dt>
+				<dd></dd>
+				<dd></dd>
+			</dl>	
+		</a></div>
+		<div><a><img src="images/9.jpg">
+		<dl>
+			<dt></dt>
+			<dd></dd>
+			<dd></dd>
+		</dl>
+		</a></div>
+	</div>
+	<div class="smallBox">
+		<div><img src="images/00.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/11.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/22.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/33.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/44.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/55.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/66.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/77.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/88.jpg">
+		<span></span>
+		</div>
+		<div><img src="images/99.jpg">
+		<span class="span10"></span>
+		</div>
+	</div>	
+</div>
+</body>
+</html>
