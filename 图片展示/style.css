@@ -1,0 +1,14 @@
+/*设置样式表*/
+/*通用设置*/
+/*html{height: 100%;}*/
+body,div,ul{ padding: 0;margin: 0;}
+body{ background:#293640;}
+img{border: 0;}
+li{ list-style:none;}
+/*底部图片列表*/
+.smallImage{width: 100%; position: absolute; bottom: 0; background: black;padding:8px;height:50px;}
+#list{margin: 0 auto;width: 350px; overflow: hidden;height: 100%; position: relative; cursor: pointer;}
+.bottom{position: absolute; width: 9999px;}
+.bottom li{float: left; opacity: 0.5}
+.active{width: 44px;height: 44px;border: 3px solid #fff;position:absolute; top: 0;left: 0;}
+.bigImage{width: 700px;height:100%; margin: 50px auto; border: 3px solid #fff;}
