@@ -230,8 +230,7 @@ function heBing(arr) {
 	});
 	if(sum === 10) {
 		score =score + 10;
-		document.getElementById("#grade").innerHTML = "<span>" + score
-		 + "</span>";//进行分数显示
+		document.getElementById("grade").innerHTML = "<span>" + score+ "</span>";//进行分数显示
 		for(var k = i-1; k>=0; k--) {
 			for(var j=0; j<10; j++) {
 				arr[k+1][j] = arr[k][j];
@@ -269,6 +268,16 @@ function bacomeOne(arr) {
  //这个函数是需要优化的，觉得不可能这么多
  //是对每个形状进行变形的
  //这个我感觉应该能用转换矩阵，等有空再优化吧，这个方法太笨了
+ // function nShape(num,arr) {
+ // 				for(var i=20; i>=0; i--) {
+ // 					for(var j=0; j<10; j++) {
+ // 						if(arr[i][j] === 2) {
+ // 						arr[i][j] = 0;//原来的地方清零
+ // 						arr[][] = 2;//这个地方是以后弄
+ // 					} 
+ // 				}
+ // 			}
+ // }
  function shape(num,arr) {
  	switch(num) {
  		case 0:

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>2048</title>
+	<style>
+		body,h1,h2{
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper{
+			text-align:center;
+		}
+		#new{
+			display: inline-block;
+			background-color:#8F7A66;
+			margin-bottom:10px;
+			line-height:30px;
+			padding:5px 10px 10px;
+			border-radius:10px;
+			color: #fff;
+			cursor:pointer;
+			float: right;
+
+		}
+		#score{
+			float: left;
+			display: inline-block;
+			background-color:#8F7A66;
+			margin-bottom:10px;
+			line-height:30px;
+			padding:5px 50px 10px 10px;
+			border-radius:10px;
+			color: #fff;
+		}
+		#score span.fs{
+			padding-left: 10px;
+		}
+		.wrapper h1{
+			font-size:60px;
+			font-weight: bold;
+			color:#776E65;
+		}
+		.clearfix{
+			width:500px;
+			margin:0 auto;
+		}
+		.clearfix::after{
+			content:'';
+			display:table;
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	<h1>2048</h1>
+	<div class="nav clearfix"><h2 id="score">score:<span class="fs">0</span><span></span></h2><h2 id="new">new game</h2></div>
+	</div>
+	<div id="box"><canvas id="canvas"></canvas></div>
+	<script src='jquery-2.1.4.js'></script>
+	<script src="script.js"></script>
+	<script>
+	$('#new').click(function () {
+		newGame();
+	})
+	</script>
+</body>
+</html>
