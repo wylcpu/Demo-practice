@@ -1,5 +1,6 @@
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
+//获取屏幕的宽度
 var sWidth = window.screen.availWidth;
 var cWidth = sWidth;
 var sideWidth = 0.04 * sWidth;

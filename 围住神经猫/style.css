@@ -1,0 +1,85 @@
+body{
+			margin:0;
+			padding:0;
+			background-image:url(images/12000.jpg);
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		.wrapper{
+			height:700px;
+			width:528px;
+			position: relative;
+			background-image:url(images/bg.jpg);
+			background-size:528px 650px;
+			background-repeat:no-repeat;
+			margin: 0 auto;
+		}
+		.box{
+			width:528px;
+			height:506px;
+			position:absolute;
+			top:204px;
+		}
+		.new{
+			position:absolute;
+			top:200px;
+			left:0;
+			width:450px;
+			height:480px;
+			/*display:none;*/
+			background-image:url(images/btn_start.png);
+			background-repeat:no-repeat;
+			background-size:400px 480px;
+			background-origin:content-box;
+			padding-left:50px;
+		}
+		.begin{
+			position:absolute;
+			left:150px;
+			top:385px;
+			width:200px;
+			height:70px;
+			cursor:pointer;
+		}
+		.fail{
+			position:absolute;
+			top:200px;
+			left:0;
+			width:450px;
+			height:580px;
+			background-image:url(images/failed.png);
+			background-repeat:no-repeat;
+			background-size:400px 300px;
+			background-origin:content-box;
+			padding-left:50px;
+			display:none;
+		}
+		.fail-content,.win-content{
+			position:absolute;
+			left:100px;
+			top:150px;
+		}
+		.fail-game,.win-game{
+			position:absolute;
+			left:150px;
+			top:300px;
+			width:200px;
+			height:95px;
+			background-size:cover;
+			background-image:url(images/replay.png);
+			background-repeat:no-repeat;
+			cursor:pointer;
+		}
+		.win{
+			position:absolute;
+			top:200px;
+			left:0;
+			width:450px;
+			height:580px;
+			background-image:url(images/victory.png);
+			background-repeat:no-repeat;
+			background-size:400px 300px;
+			background-origin:content-box;
+			padding-left:50px;
+			display:none;
+		}

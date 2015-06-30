@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>围住神经猫</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="box">
+	<canvas id="canvas" width="528" height='506'></canvas>	
+	</div>
+	<div class="new">
+		<div class="begin">
+			
+		</div>
+	</div>
+	<div class='win'>
+	<h2 class='win-content'>大哥，你实在太厉害了！<br>
+				放了小弟吧！</h2>
+		<div class="win-game"></div>
+	</div>
+	<div class="fail">
+		<h2 class='fail-content'>你的IQ太low了!!!
+			<br/>你是抓不住我的！</h2>
+		<div class="fail-game"></div>
+	</div>
+</div>
+
+	<script>
+		var begin = document.querySelector('.begin');
+		var newBegin = document.querySelector('.new');
+		var failGame = document.querySelector('.fail-game');
+		var fail = document.querySelector('.fail');
+		var winGame = document.querySelector('.win-game');
+		var win = document.querySelector('.win');
+		begin.addEventListener('click',function(){
+			newBegin.style.display = 'none';
+		},false);
+		failGame.addEventListener('click',function() {
+			fail.style.display = 'none';
+			init();
+		},false);
+		winGame.addEventListener('click',function() {
+			win.style.display = 'none';
+			init();
+		})
+
+	</script>
+	<script src="gameCat.js"></script>
+</body>
+</html>
